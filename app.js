@@ -33,8 +33,9 @@ var appEnv = cfenv.getAppEnv();
 app.set('port', process.env.PORT || 3000);
 
 app.set('views', __dirname + '/views');
+app.engine('hbs', require('exphbs'));
 app.set('view engine', 'hbs');
-app.engine('html', require('hbs').renderFile);
+
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/style', express.static(path.join(__dirname, '/views/style')));
