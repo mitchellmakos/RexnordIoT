@@ -2,12 +2,12 @@
  * Module dependencies.
  */
 
-var express = require('express'),
-    routes = require('./routes'),
-    user = require('./routes/user'),
-    http = require('http'),
-    path = require('path'),
-    fs = require('fs');
+var express = require('express');
+var routes = require('./routes');
+var user = require('./routes/user');
+var http = require('http');
+var path = require('path');
+var fs = require('fs');
 
 var app = express();
 
@@ -17,9 +17,8 @@ var cloudant;
 
 var fileToUpload;
 
-var dbCredentials = {
-    dbName: 'my_sample_db'
-};
+var dbCredentials = { dbName: 'my_sample_db' };
+
 
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
@@ -30,6 +29,7 @@ var multipartMiddleware = multipart();
 
 // all environments
 app.set('port', process.env.PORT || 3000);
+
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 app.engine('html', require('ejs').renderFile);

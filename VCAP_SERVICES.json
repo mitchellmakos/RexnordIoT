@@ -1,0 +1,24 @@
+{
+  "cloudantNoSQLDB": [
+    {
+      "credentials": {
+        "username": "ee039349-aacc-44f4-a25c-df18ae483605-bluemix",
+        "password": "4a7de72318113694e3c6248b5f0a46a4e4fb085759db76bafadf2e4b9ed1347c",
+        "host": "ee039349-aacc-44f4-a25c-df18ae483605-bluemix.cloudant.com",
+        "port": 443,
+        "url": "https://ee039349-aacc-44f4-a25c-df18ae483605-bluemix:4a7de72318113694e3c6248b5f0a46a4e4fb085759db76bafadf2e4b9ed1347c@ee039349-aacc-44f4-a25c-df18ae483605-bluemix.cloudant.com"
+      },
+      "syslog_drain_url": null,
+      "label": "cloudantNoSQLDB",
+      "provider": null,
+      "plan": "Lite",
+      "name": "RexnordIoT-cloudantNoSQLDB",
+      "tags": [
+        "data_management",
+        "ibm_created",
+        "lite",
+        "ibm_dedicated_public"
+      ]
+    }
+  ]
+}
