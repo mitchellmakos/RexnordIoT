@@ -21,7 +21,10 @@ var errorHandler = require('errorhandler');
 
 
 var routes = require('./routes');
-var user = require('./routes/user');
+//var user = require('./routes/user');
+
+app.get('/', routes.index);
+app.get('/user', routes.user);
 
 
 var app = express();
@@ -95,7 +98,7 @@ app.use(function (req, res, next) {
 });
 
 
-app.get('/', routes.index);
+
 
 
 //app.use('/', routes);
